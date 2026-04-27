@@ -77,3 +77,43 @@ Large files are mostly STL/STEP references, generated exports, and venv librarie
 
 It is safe to initialize Git after creating `.gitignore`, then stage only source/documentation/template folders and verify staged files before commit.
 
+## Staged File Verification
+
+Before the initial commit, staged files were checked for generated export and cache/binary extensions:
+
+- no staged `*.stl`, `*.step`, `*.png`, `*.pdf`, image exports, Python cache files, DLLs, EXEs, or ZIPs were found
+- staged `.FCStd` files were kept because FreeCAD source files are allowed when reasonably sized
+- largest staged file was `FreeCAD Projects\racing seat phone stand\freecad\racing_seat_phone_stand.FCStd` at about 1.7 MB
+
+## Repository Creation Result
+
+| Check | Result |
+|---|---|
+| Git initialized | yes |
+| Branch | `main` |
+| Initial commit created | yes |
+| Initial commit hash | `099e281` |
+| GitHub repository created | yes |
+| Repository | `swayerloren/cad-projects` |
+| Visibility | private |
+| Repository URL | `https://github.com/swayerloren/cad-projects` |
+| Remote origin | `https://github.com/swayerloren/cad-projects.git` |
+| Push status | pushed `main` to `origin/main` |
+| Browser view command | `gh repo view --web` completed |
+
+## Ignored Files Summary
+
+The `.gitignore` blocks generated CAD exports, render/image outputs, virtual environments, Python caches, tool output folders, FreeCAD backup/cache files, OpenSCAD temp/log files, and OS/editor junk.
+
+The initial commit intentionally excluded these untracked legacy/source folders pending selective migration:
+
+- `Training Openscad`
+- `my projects`
+- `pre made traiing models 3d`
+
+These folders were not deleted or moved. They should be reviewed later and added selectively, with generated exports and large binary references kept out unless explicitly approved.
+
+## Remaining Manual Steps
+
+- Review old project folders for source files that should be tracked separately from large references and generated exports.
+- Add large binary reference assets only with an explicit policy decision, preferably using Git LFS if they must live in the GitHub repo.

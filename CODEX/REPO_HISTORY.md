@@ -29,9 +29,10 @@
 
 ## 2026-04-27 GitHub Repo Setup
 
-- Prepared `C:\Users\LJ\CAD Projects` to become a GitHub-backed repository.
-- Preferred GitHub repo name: `cad-projects`.
-- Intended visibility: private.
+- Prepared `C:\Users\LJ\CAD Projects` as a GitHub-backed repository.
+- Created private GitHub repository `swayerloren/cad-projects`.
+- Remote URL: `https://github.com/swayerloren/cad-projects.git`.
 - Added `.gitignore` policy to track source/memory/docs while ignoring generated CAD exports, renders, venvs, caches, and unnecessary binaries.
 - Repository should track CODEX memory, Training CAD, OpenSCAD source, FreeCAD source, macros, shared modules, and project documentation.
 - FreeCAD/OpenSCAD applications are external installs and are not stored in the repo.
+- Initial commit `099e281` was pushed to `origin/main`.

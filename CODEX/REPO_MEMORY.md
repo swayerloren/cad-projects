@@ -54,7 +54,8 @@ Use hybrid workflows for organic STL-derived parts or projects where OpenSCAD ha
 - Update project memory after meaningful work.
 - Add reusable lessons to `Training CAD` when a lesson is broadly useful.
 - Before success, verify exact files modified and required structure exists.
-- This CAD root is intended to be GitHub-backed as private repo `cad-projects` unless renamed.
+- This CAD root is GitHub-backed as private repo `swayerloren/cad-projects` unless renamed.
+- Remote URL: `https://github.com/swayerloren/cad-projects.git`.
 - Track docs, SCAD, FreeCAD source files, macros, shared modules, CODEX memory, and Training CAD.
 - Do not commit generated exports, virtual environments, caches, secrets, or unnecessary large binaries unless explicitly requested.
 - FreeCAD and OpenSCAD applications are installed outside this repo and must not be stored here.
