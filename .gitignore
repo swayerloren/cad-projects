@@ -1,0 +1,60 @@
+# Python / virtual env
+tools/.venv/
+Tools/.venv/
+.venv/
+__pycache__/
+*.pyc
+
+# CAD generated exports
+Exports/
+exports/
+**/exports/
+**/Exports/
+*.stl
+*.obj
+*.3mf
+*.step
+*.stp
+*.iges
+*.igs
+*.dxf
+*.png
+*.jpg
+*.jpeg
+*.avif
+*.webp
+*.gif
+*.pdf
+
+# Keep docs, SCAD, macros, and source text tracked
+!*.scad
+!*.FCMacro
+!*.py
+!*.md
+!*.json
+!*.jsonl
+!*.csv
+!*.txt
+
+# FreeCAD backup/cache
+*.FCStd1
+*.FCBak
+*.brep
+*.stl.part
+
+# OpenSCAD backup/cache
+*.bak
+*.tmp
+*.log
+
+# Tool outputs
+tools/output/
+Tools/Analysis Output/
+**/output/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json

@@ -1,0 +1,4 @@
+sexpdata
+pandas
+numpy
+matplotlib

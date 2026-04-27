@@ -1,0 +1,74 @@
+# Do And Do Not
+
+## Do
+
+- Use clear load paths.
+- Use reinforced mount pods.
+- Use triangular gussets.
+- Use ribbed supports.
+- Keep the active lower enclosure free of generated zip-tie slot geometry unless the user explicitly asks to add it back.
+- Keep side walls solid while the user-owned manual zip-tie slot design is pending.
+- Use `mode="production"` for STL export.
+- Keep preview/helper geometry out of production modules and production unions.
+- Calculate side margin from real wire/tie clearance needs instead of leaving large empty floor gaps.
+- Use heat-set inserts for PCB mounting.
+- Keep exterior walls solid except the intentional grommet hole.
+- Keep the part compact but strong.
+- Use clean rounded automotive-style mounting ears.
+- Use refined oval/teardrop mount lugs with raised bosses, wide necks, and simple clean gussets.
+- Use continuous wall shells, clean top rims, stepped bosses, and consistent softened feature radii for molded appearance.
+- Use fast rounded/chamfered approximations for OpenSCAD manufacturing cleanup when true fillets make export too slow.
+- Use tapered boss blends at mount and grommet bosses where practical.
+- Use rounded gusset ends and intentional mount root blends instead of square-ended block ribs.
+- Document injection-molding concerns separately from FDM prototype geometry.
+- Preserve PCB serviceability.
+- Preserve solder pad and screw access.
+- Use one circular short-side wire entry.
+- Keep mounting holes outside the PCB cavity.
+- Keep OpenSCAD modular and parameterized.
+- Keep the active SCAD consolidated around accepted current modules and parameter groups.
+- Update knowledge files after major corrections.
+
+## Do Not
+
+- Do not use flat unsupported ears.
+- Do not use standalone weak zip-tie towers.
+- Do not use blocky stacked rectangular zip-tie mounts.
+- Do not use crude zip-tie rail blocks with unclear tie paths.
+- Do not use a long ladder/rack/grille wall for zip-tie retention.
+- Do not make six-per-side wall ties the default when the reference design calls for four individual clips.
+- Do not use fake cable-tie saddles with no visible physical pass-through path.
+- Do not use floor-mounted saddles if they are awkward to reach after PCB installation.
+- Do not use zip-tie bridge slots that cut through the outside wall.
+- Do not re-add zip-tie slots, bridge pads, rack holes, or zip-tie path previews unless explicitly requested.
+- Do not solve zip-tie access by making a wide empty side channel.
+- Do not leave a 15-25 mm dead floor strip between PCB edge and wall-retention features.
+- Do not use fewer or decorative tie features when the design requires twelve usable retention points.
+- Do not place zip-tie features where they are hidden under, behind, or too close to the installed PCB.
+- Do not require blind zip-tie threading behind the board after wires are soldered.
+- Do not assume a wall-integrated zip-tie feature is usable without checking the tie path, slot size, wire bundle lane, and PCB clearance together.
+- Do not use sharp rectangular slot mouths where a real zip tie must be fed after assembly.
+- Do not use ugly non-OEM truss-fin mount pods.
+- Do not use crude patched-on external ears or fork-shaped mount geometry.
+- Do not cut zip-tie slots through exterior walls.
+- Do not export STL from preview mode.
+- Do not put PCB placeholders, wire markers, zip-tie path previews, service clearance blocks, labels, or debug geometry in production geometry.
+- Do not create random wall gaps.
+- Do not create a long rectangular side wire opening.
+- Do not block PCB installation.
+- Do not block solder pad access.
+- Do not block screw access.
+- Do not make oversized bulky geometry without structural reason.
+- Do not add fake styling ribs, ornamental surface detail, or large cosmetic blocks.
+- Do not use expensive repeated `minkowski()`, `offset()`, or nested `hull()` filleting if it makes production export unreliable.
+- Do not claim the current part is injection-mold-ready without draft, coring, parting-line, and side-action review.
+- Do not trade away zip-tie serviceability or exterior wall integrity just to simplify tooling.
+- Do not keep dead compatibility wrappers, unused parameters, or rejected geometry in the active SCAD file.
+- Do not modify KiCad files.
+- Do not modify fabrication files.
+- Do not solve strength only by making everything thicker.
+- Do use simple integrated external mounting ears for rugged electronics modules.
+- Do use wide necks into the wall/floor, low screw bosses, and plain ribs for off-road mount load paths.
+- Do not use stacked wedding-cake screw bosses on external ears.
+- Do not use skinny arms between the enclosure wall and a large screw lug.
+- Do not use decorative truss clutter where a simple thick tab would be stronger and easier to manufacture.

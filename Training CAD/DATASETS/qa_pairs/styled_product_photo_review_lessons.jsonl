@@ -1,0 +1,1 @@
+{"question":"Why is bounding-box matching insufficient for a styled STL-to-OpenSCAD rebuild?","answer":"Styled products depend on silhouette, visual language, part separation, openings, surface proportions, and user-facing function. Reference photos should be reviewed and compared against the OpenSCAD model before claiming visual accuracy."}
